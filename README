@@ -17,3 +17,5 @@ Pins 10 thru 17 are your input/output pins
 Check the datasheet for more info: http://ww1.microchip.com/downloads/en/DeviceDoc/21919b.pdf
 
 Enjoy and send pull requests!
+
+Adapted for Particle IDE by Evan Simkowitz.
