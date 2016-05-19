@@ -42,7 +42,7 @@ void Adafruit_MCP23008::begin(uint8_t addr) {
 
   // set defaults!
   Wire.beginTransmission(MCP23008_ADDRESS | i2caddr);
-#if ARDUINO >= 100
+#if ARDUINO >= 100 || defined (SPARK)
   Wire.write((byte)MCP23008_IODIR);
   Wire.write((byte)0xFF);  // all inputs
   Wire.write((byte)0x00);
@@ -156,7 +156,7 @@ uint8_t Adafruit_MCP23008::digitalRead(uint8_t p) {
 
 uint8_t Adafruit_MCP23008::read8(uint8_t addr) {
   Wire.beginTransmission(MCP23008_ADDRESS | i2caddr);
-#if ARDUINO >= 100
+#if ARDUINO >= 100 || defined (SPARK)
   Wire.write((byte)addr);	
 #else
   Wire.send(addr);	
@@ -164,7 +164,7 @@ uint8_t Adafruit_MCP23008::read8(uint8_t addr) {
   Wire.endTransmission();
   Wire.requestFrom(MCP23008_ADDRESS | i2caddr, 1);
 
-#if ARDUINO >= 100
+#if ARDUINO >= 100 || defined (SPARK)
   return Wire.read();
 #else
   return Wire.receive();
@@ -174,7 +174,7 @@ uint8_t Adafruit_MCP23008::read8(uint8_t addr) {
 
 void Adafruit_MCP23008::write8(uint8_t addr, uint8_t data) {
   Wire.beginTransmission(MCP23008_ADDRESS | i2caddr);
-#if ARDUINO >= 100
+#if ARDUINO >= 100 || defined (SPARK)
   Wire.write((byte)addr);
   Wire.write((byte)data);
 #else
