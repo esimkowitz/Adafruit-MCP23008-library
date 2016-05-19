@@ -8,6 +8,8 @@
   products from Adafruit!
 
   Written by Limor Fried/Ladyada for Adafruit Industries.  
+  
+  Adapted for Particle IDE by Evan Simkowitz.
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
