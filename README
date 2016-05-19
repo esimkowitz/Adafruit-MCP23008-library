@@ -1,7 +1,8 @@
-To download, click "Download Source" in the top right corner. Then install as indicated in our tutorial:
---> http://www.ladyada.net/library/arduino/libraries.html
-in a folder called Adafruit_MCP23008.
+Adapted for Particle IDE by Evan Simkowitz.
+Still working on adapting the pullup resistors.
+The best wiring diagram I've found is http://gtbtech.com/?p=875
 
+Description from Adafruit:
 This is very much beta, it seems to work fine but its not optimized and doesn't currently suport the interrupt capability of the chip
 
 Currently it can do: setting pin directions, inputs and outputs and turning on/off the pull-up resistors
@@ -17,5 +18,3 @@ Pins 10 thru 17 are your input/output pins
 Check the datasheet for more info: http://ww1.microchip.com/downloads/en/DeviceDoc/21919b.pdf
 
 Enjoy and send pull requests!
-
-Adapted for Particle IDE by Evan Simkowitz.
