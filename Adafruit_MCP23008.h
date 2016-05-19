@@ -11,13 +11,16 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
+
+
+
 #ifndef _ADAFRUIT_MCP23008_H
 #define _ADAFRUIT_MCP23008_H
 // Don't forget the Wire library
-#ifdef __AVR_ATtiny85__
-  #include <TinyWireM.h>
+#if defined (SPARK)
+#include "application.h"
 #else
-  #include <Wire.h>
+#include <Wire.h>
 #endif
 
 class Adafruit_MCP23008 {
