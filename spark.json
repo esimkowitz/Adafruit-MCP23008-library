@@ -1,7 +1,7 @@
 { 
-2 	"name": "Adafruit_MCP23008", 
-3 	"author": "Limor Fried/Ladyada / Evan Simkowitz", 
-4 	"version": "1.0.1", 
-5 	"license": "BSD License", 
-6 	"description": "Adafruit_MCP23008 I2C expander library adapted for Spark" 
-7 } 
+ 	"name": "Adafruit_MCP23008", 
+ 	"author": "Limor Fried/Ladyada / Evan Simkowitz", 
+ 	"version": "1.0.1", 
+ 	"license": "BSD License", 
+ 	"description": "Adafruit_MCP23008 I2C expander library adapted for Spark" 
+} 
