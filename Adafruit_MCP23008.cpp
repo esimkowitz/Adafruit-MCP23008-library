@@ -11,25 +11,21 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
-#if ARDUINO >= 100
- #include "Arduino.h"
+#if defined (SPARK)
+#include "Adafruit_MCP23008.h"
 #else
- #include "WProgram.h"
-#endif
-#ifdef __AVR_ATtiny85__
-  #include <TinyWireM.h>
-  #define Wire TinyWireM
-#else
-  #include <Wire.h>
-#endif
-
-#ifdef __AVR
-  #include <avr/pgmspace.h>
-#elif defined(ESP8266)
-  #include <pgmspace.h>
+#include <Wire.h>
+#ifdef __AVR__
+#include <avr/pgmspace.h>
 #endif
 #include "Adafruit_MCP23008.h"
 
+#if ARDUINO >= 100
+#include "Arduino.h"
+#else
+#include "WProgram.h"
+#endif
+#endif //Spark
 
 ////////////////////////////////////////////////////////////////////////////////
 // RTC_DS1307 implementation
