@@ -3,5 +3,5 @@
  	"author": "Limor Fried/Ladyada / Evan Simkowitz", 
  	"version": "1.0.1", 
  	"license": "BSD License", 
- 	"description": "Adafruit_MCP23008 I2C expander library adapted for Spark" 
+ 	"description": "Adafruit_MCP23008 I2C expander library adapted for Particle IDE" 
 } 
