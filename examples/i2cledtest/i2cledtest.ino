@@ -1,13 +1,13 @@
-/* 
+/*
  *  ledtest.ino
- *  
+ *
  *  Copyright (c) 2016, Evan Simkowitz
  *  Wiring for the chip can be found at:
  *  http://gtbtech.com/?p=875
  *  Wire an led for the GP0 pin using the setup suggested in the wiring
  *  diagram above.
  */
-#include "Adafruit_MCP23008/Adafruit_MCP23008.h"
+#include "Adafruit_MCP23008.h"
 
 bool ledOn = false;
 
